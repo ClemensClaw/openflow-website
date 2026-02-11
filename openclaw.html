@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Was ist OpenClaw? Der KI-Automation-Engine der dein Team vervielfacht und Mitarbeiter ersetzt.">
+    <title>OpenClaw — Die KI-Automation Plattform</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .hero-small {
+            margin-top: 70px;
+            padding: 3rem 0;
+            min-height: auto;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .feature-item {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .feature-item:hover {
+            border-color: var(--accent);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(74, 158, 255, 0.1);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 3rem 0;
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: 1.5rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .comparison-table th {
+            background: rgba(74, 158, 255, 0.1);
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        .comparison-table tr:last-child th,
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .comparison-table .check {
+            color: var(--success);
+            font-weight: bold;
+        }
+
+        .comparison-table .cross {
+            color: #ff6b6b;
+        }
+
+        .case-study {
+            background: linear-gradient(135deg, rgba(74, 158, 255, 0.1) 0%, rgba(74, 158, 255, 0.05) 100%);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2.5rem;
+            margin: 3rem 0;
+        }
+
+        .case-study h3 {
+            margin-bottom: 1rem;
+            color: var(--accent);
+        }
+
+        .cost-breakdown {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .cost-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .cost-amount {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--accent);
+            margin: 1rem 0;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            gap: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">🦞</span>
+                <span class="logo-text">OpenFlow</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#services" class="nav-link">Services</a></li>
+                <li><a href="index.html#contact" class="nav-link cta-nav">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero hero-small">
+        <div class="container">
+            <a href="index.html" class="back-link">← Zurück</a>
+            <h1 class="hero-title">OpenClaw</h1>
+            <p class="hero-subtitle">Die KI-Automation Engine die dein Team vervielfacht und Mitarbeiter ersetzt.</p>
+        </div>
+    </section>
+
+    <!-- What is OpenClaw -->
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">Was ist OpenClaw?</h2>
+            
+            <p style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 2rem; line-height: 1.8;">
+                OpenClaw ist eine <strong>Server-basierte KI-Automation Plattform</strong>, die repetitive Aufgaben vollständig automatisiert. 
+                Statt manuell: Slack-Nachrichten sortieren, GitHub-Events verarbeiten, E-Mails filtern, Daten synchronisieren — 
+                läuft alles von selbst. Rund um die Uhr. Ohne menschliches Zutun.
+            </p>
+
+            <p style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 3rem; line-height: 1.8;">
+                <strong>Mit OpenClaw sparst du nicht nur Zeit — du sparst Vollzeitstellen.</strong>
+            </p>
+
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">🤖</div>
+                    <h3>KI-Agents</h3>
+                    <p>Custom KI-Agenten die deine Workflows verstehen und selbstständig Entscheidungen treffen.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Echtzeit-Automation</h3>
+                    <p>Events triggern sofort Aktionen. GitHub-Push? → Slack notified. Email kommt rein? → Auto-processed.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">🔗</div>
+                    <h3>Tool-Integration</h3>
+                    <p>Alles ist verbunden: GitHub, Slack, Email, Calendars, APIs, Webhooks — ein großes System.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">💾</div>
+                    <h3>Stateful Memory</h3>
+                    <p>OpenClaw merkt sich Kontext. Workflows sind intelligent, nicht dumb rules.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">📊</div>
+                    <h3>Monitoring & Logs</h3>
+                    <p>Vollständige Transparenz was läuft, wann es läuft, was schiefgeht.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Skalierbar</h3>
+                    <p>10 Workflows oder 1000 — OpenClaw läuft stabil. Keine Performance-Probleme.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Replaces Employees -->
+    <section class="problem-solution">
+        <div class="container">
+            <h2 class="section-title">Wie OpenClaw Mitarbeiter ersetzt</h2>
+            
+            <p style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 2rem; text-align: center;">
+                Das klingt extrem — ist aber wahr. Hier konkrete Beispiele:
+            </p>
+
+            <div class="case-study">
+                <h3>Case 1: DevOps Admin (€60K/Jahr)</h3>
+                <p><strong>Vorher:</strong> Ein Developer sitzt 4-5 Stunden täglich und:</p>
+                <ul style="margin: 1rem 0; color: var(--text-secondary);">
+                    <li>✗ Monitort GitHub Actions & schmeißt failed Builds neu an</li>
+                    <li>✗ Schreibt Slack-Nachrichten bei Production Errors</li>
+                    <li>✗ Synchronisiert Daten zwischen Tools</li>
+                    <li>✗ Erstellt manuelle Reports für das Team</li>
+                </ul>
+                <p><strong>Mit OpenClaw:</strong> Alles automatisiert.</p>
+                <ul style="margin: 1rem 0; color: var(--text-secondary);">
+                    <li>✓ Build fails? Automatisch geretryed + Team notified</li>
+                    <li>✓ Error in Production? Sofort Slack Alert + Auto-Rollback</li>
+                    <li>✓ Daten sind immer synced (real-time)</li>
+                    <li>✓ Reports werden auto-generated und ins Channel gepostet</li>
+                </ul>
+                <p style="margin-top: 1.5rem;"><strong>Resultat: 5 Stunden/Tag × 220 Arbeitstage = 1100 Stunden/Jahr spart sich dein Team.</strong></p>
+            </div>
+
+            <div class="case-study">
+                <h3>Case 2: Content Manager (€40K/Jahr)</h3>
+                <p><strong>Vorher:</strong> Jemand manuell:</p>
+                <ul style="margin: 1rem 0; color: var(--text-secondary);">
+                    <li>✗ Postet Content zu bestimmten Zeiten auf Slack/Teams</li>
+                    <li>✗ Sortiert eingehende Anfragen nach Priorität</li>
+                    <li>✗ Erstellt Weekly Summaries</li>
+                    <li>✗ Antwortet auf Standard-Fragen</li>
+                </ul>
+                <p><strong>Mit OpenClaw:</strong></p>
+                <ul style="margin: 1rem 0; color: var(--text-secondary);">
+                    <li>✓ Content-Calendar ist ein Cron Job — postet von selbst</li>
+                    <li>✓ Neue Anfragen werden auto-kategorisiert & assigned</li>
+                    <li>✓ Summaries werden samstags auto-generated</li>
+                    <li>✓ Standard-Fragen werden von KI-Agent beantwortet</li>
+                </ul>
+                <p style="margin-top: 1.5rem;"><strong>Resultat: 3 Stunden/Tag für Routine-Arbeit komplett weg.</strong></p>
+            </div>
+
+            <div class="case-study">
+                <h3>Case 3: Ops/Admin Team (€50K/Jahr)</h3>
+                <p><strong>Vorher:</strong> Manuell Tickets & Prozesse verwalten</p>
+                <ul style="margin: 1rem 0; color: var(--text-secondary);">
+                    <li>✗ Tickets zwischen Tools verschieben (Jira ↔ Slack ↔ Email)</li>
+                    <li>✗ Status-Updates schreiben</li>
+                    <li>✗ Escalations verwalten</li>
+                    <li>✗ Berichte compilieren</li>
+                </ul>
+                <p><strong>Mit OpenClaw:</strong></p>
+                <ul style="margin: 1rem 0; color: var(--text-secondary);">
+                    <li>✓ Tickets auto-synced zwischen alle Systemen</li>
+                    <li>✓ Status-Updates basieren auf Events (auto-updated)</li>
+                    <li>✓ Escalations triggern automatisch (Owner benachrichtigt, etc)</li>
+                    <li>✓ Reports werden auto-compiled & versendet</li>
+                </ul>
+                <p style="margin-top: 1.5rem;"><strong>Resultat: 60-70% der Routine-Arbeit ist weg.</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">Mit vs Ohne OpenClaw</h2>
+
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Task</th>
+                        <th>Ohne OpenClaw</th>
+                        <th>Mit OpenClaw</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>GitHub Integration mit Slack</strong></td>
+                        <td class="cross">✗ Manual oder begrenzte Bots</td>
+                        <td class="check">✓ Custom Agent. Jedes Event konfigurierbar</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Production Monitoring</strong></td>
+                        <td class="cross">✗ Jemand muss Logs lesen</td>
+                        <td class="check">✓ KI parsed Logs, sendet Alerts, startet Actions</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Daily Reports</strong></td>
+                        <td class="cross">✗ Manuell zusammentragen</td>
+                        <td class="check">✓ Auto-generated, auto-versendet täglich</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Customer Support Tickets</strong></td>
+                        <td class="cross">✗ Manuell sortieren & zuweisen</td>
+                        <td class="check">✓ KI-Agent kategorisiert & assigned auto</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Data Sync zwischen Tools</strong></td>
+                        <td class="cross">✗ Zapier/Integromat oder manual</td>
+                        <td class="check">✓ Real-time, bidirectional sync</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Team Notifications</strong></td>
+                        <td class="cross">✗ Ad-hoc Slack messages</td>
+                        <td class="check">✓ Smart Notifications basieren auf Context</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Meeting Notes Automation</strong></td>
+                        <td class="cross">✗ Jemand schreibt manuell mit</td>
+                        <td class="check">✓ KI transcribed, summarizes, versendet</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Workflow Scalability</strong></td>
+                        <td class="cross">✗ Begrenzt auf simple Zapier flows</td>
+                        <td class="check">✓ Komplexe logics, Konditionalen, Custom Code</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Cost Breakdown -->
+    <section class="problem-solution">
+        <div class="container">
+            <h2 class="section-title">Die Rechnung: OpenClaw vs Vollzeitstelle</h2>
+
+            <div class="cost-breakdown">
+                <div class="cost-card">
+                    <h4>Vollzeitstelle (Junior Ops)</h4>
+                    <div class="cost-amount">€50K</div>
+                    <p style="color: var(--text-secondary);">/Jahr</p>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-secondary);">+ Nebenkosten, Urlaub, Krankheit, Rente</p>
+                </div>
+
+                <div class="cost-card">
+                    <h4>OpenClaw Setup</h4>
+                    <div class="cost-amount">€300</div>
+                    <p style="color: var(--text-secondary);">(Einmalig)</p>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-secondary);">+ Server-Kosten ca €50/Monat</p>
+                </div>
+
+                <div class="cost-card">
+                    <h4>Break-Even</h4>
+                    <div class="cost-amount">1 Monat</div>
+                    <p style="color: var(--text-secondary);">+ Support</p>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-secondary);">OpenClaw kostet sich selbst aus im ersten Monat.</p>
+                </div>
+            </div>
+
+            <p style="text-align: center; font-size: 1.1rem; color: var(--text-secondary); margin-top: 3rem;">
+                <strong>Jahr 1:</strong> €50K (ohne OpenClaw) vs €300 (mit OpenClaw)<br>
+                <strong>Ersparnis: €49.700 im ersten Jahr.</strong><br>
+                <strong>Plus: Dein Team arbeitet schneller, fehlerfreier, schlafend 😴</strong>
+            </p>
+        </div>
+    </section>
+
+    <!-- Why OpenClaw -->
+    <section class="why-us">
+        <div class="container">
+            <h2 class="section-title">Warum OpenClaw so mächtig ist</h2>
+
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-icon">🧠</div>
+                    <h3>KI-native</h3>
+                    <p>Gebaut für KI-Agents. Jeder Agent versteht Context, History, Decisions. Nicht dumb Rules.</p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-icon">🔄</div>
+                    <h3>Event-Driven</h3>
+                    <p>Echtzeit-Automation. Dinge passieren sofort wenn sie passieren, nicht in batches.</p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-icon">🛡️</div>
+                    <h3>Reliable</h3>
+                    <p>Gebaut auf Open Source. Selbst gehostet. Keine monatlichen SaaS-Bills. Keine Vendor Lock-in.</p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-icon">🎯</div>
+                    <h3>Purpose-Built</h3>
+                    <p>OpenClaw ist nicht "noch ein Automation Tool". Es ist für echte Automation gebaut.</p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-icon">📈</div>
+                    <h3>Skaliert mit dir</h3>
+                    <p>Von 1 Workflow bis 100. Von 1 Team bis 100 Teams. Performance bleibt gleich.</p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-icon">💡</div>
+                    <h3>Customizable</h3>
+                    <p>Keine Templates, keine Limits. Du schreibst den Code wie du willst. Total flexible.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Bereit, dein Team zu multiplizieren?</h2>
+            <p>OpenClaw Setup ab €50. Los geht's.</p>
+            <a href="index.html#contact" class="btn btn-primary btn-large">OpenFlow kontaktieren</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>OpenFlow</h4>
+                    <p>Professional OpenClaw Setup & Automation Services</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="index.html#services">Packages</a></li>
+                        <li><a href="openclaw.html">Über OpenClaw</a></li>
+                        <li><a href="index.html#contact">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontakt</h4>
+                    <ul>
+                        <li><a href="mailto:hello@openflow.io">hello@openflow.io</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 OpenFlow. Built for teams that automate smarter.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
